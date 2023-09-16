@@ -1,0 +1,42 @@
+@import url('https://rsms.me/inter/inter.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-theme {
+    --textcolor: #100F0F;
+    --bgcolor: #F5F3F0;
+    --highlight: #6F6E69;
+}
+
+.dark-theme {
+    --textcolor: #CECDC3;
+    --bgcolor: #100F0F;
+    --highlight: #878580;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+/* ------- Body ------- */
+
+body {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    color: var(--textcolor);
+    background: var(--bgcolor);
+    position: relative;
+    max-width: 64em;
+    margin: 0 auto;
+}
